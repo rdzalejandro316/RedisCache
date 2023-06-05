@@ -1,0 +1,8 @@
+az group create --resource-group RedisGroup --location eastus2
+
+az redis create --name PlatziRedisCache --location eastus2 --resource-group RedisGroup --sku Basic --vm-size c0
+
+az redis list --resource-group RedisGroup
+
+extensión del archivo “.azcli”
+
